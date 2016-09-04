@@ -265,7 +265,7 @@ if __name__ == "__main__":
     session_1.parse_raw_log()
     create_datetime()
 
-    #call the CSV shit to write a CSV now that we have the Lists
+    #call the CSV functions to write a CSV now that we have the Lists
     add_to_csv2(csv_fname)
     #time how long code takes
     end = time.time()

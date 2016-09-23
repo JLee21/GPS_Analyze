@@ -1,3 +1,4 @@
+""""    This file simply pulls passes a file as the first argurment and parses GPGGA sentences, line-by-line    ""
 
 import sys, re
 

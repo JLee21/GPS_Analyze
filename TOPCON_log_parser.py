@@ -223,7 +223,7 @@ class CPU:
                 #it goes year, month, day
                 temp_cpu_time = datetime.datetime( int(cpu_tot.group(3)), int(cpu_tot.group(1)), int(cpu_tot.group(2)),
                                                                    hours, int(cpu_tot.group(5)), int(cpu_tot.group(6)))
-                print temp_cpu_time
+                print (temp_cpu_time)
                 temp_ptx_cpu_list = str(temp_cpu_time) + "," + cpu_tot.group(8) + "," + \
                                     cpu_tot.group(9) + "," + cpu_tot.group(10) + "," + cpu_tot.group(11) + ","
 

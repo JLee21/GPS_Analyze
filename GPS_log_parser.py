@@ -47,6 +47,7 @@ class Raw_Log:
         self.file_list_name = []
         self.file_list_cpu_path = []
         self.file_list_cpu_name = []
+        
     def get_meta_file_data(self):
         for dirName, subdirlList, fileListTemp in os.walk(path, topdown=False):
             print('Found directory: %s' % dirName)
@@ -57,7 +58,7 @@ class Raw_Log:
                 if "tps" in tempFile or "cpulog" in tempFile or "log" in tempFile:
                     self.file_list_path.append(tempFile)
                     self.file_list_name.append(fname)
-
+                    
     def order_files(self):
         #we assume that the file lists are in reverse order ie bb, ba, b
         #find the first two consecutive .tps file
